@@ -4,6 +4,7 @@ import { Header } from "../header";
 import { NewPost } from "../NewPost";
 import { Profile } from "../profile";
 import { Feed } from "../feed";
+import { RigthSide } from "../rigthSide";
 
 export function Layout() {
   return (
@@ -13,6 +14,7 @@ export function Layout() {
         <Profile />
         <NewPost />
         <Feed />
+        <RigthSide />
       </StyledLayout>
     </>
   );

@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 250px;
 `;
 
 export const Container = styled.div`
@@ -15,7 +14,8 @@ export const Container = styled.div`
   flex-direction: column;
   background-color: var(--painel-color);
   border-radius: 5px;
-  border: 1px solid var(--gray-color);
+  overflow: hidden;
+  border: 1px solid rgb(235 235 235);
 
   span {
     color: var(--gray-color);
@@ -25,7 +25,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-bottom: 1px solid var(--gray-color);
+    border-bottom: 1px solid rgb(235 235 235);
     padding-bottom: 10px;
     .top {
       padding: 0;
@@ -53,7 +53,7 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 10px;
     padding: 10px 0;
-    border-bottom: 1px solid var(--gray-color);
+    border-bottom: 1px solid rgb(235 235 235);
     .item {
       display: flex;
       justify-content: space-between;
@@ -80,20 +80,22 @@ export const Container = styled.div`
 `;
 
 export const Painel = styled.div`
+  position: sticky;
+  top: 65px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   border-radius: 5px;
   padding: 10px 0;
-  border: 1px solid var(--gray-color);
-  background-color: var(--panel-color);
+  border: 1px solid rgb(235 235 235);
+  background-color: var(--painel-color);
 
   h3 {
     color: var(--blue-color);
+    padding-left: 5px;
     font-weight: 500;
   }
   div {
-    padding: 0 5px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -105,7 +107,7 @@ export const Painel = styled.div`
       cursor: pointer;
       font-size: 13px;
       transition: all 0.3s ease;
-      padding: 5px 0;
+      padding: 5px;
       font-weight: 500;
 
       &:hover {
@@ -115,13 +117,14 @@ export const Painel = styled.div`
     }
   }
   footer {
-    border-top: 1px solid var(--gray-color);
+    border-top: 1px solid rgb(235 235 235);
     padding-top: 10px;
     text-align: center;
     span {
       font-size: 16px;
       font-weight: 500;
       color: var(--gray-color);
+      cursor: pointer;
     }
   }
 `;

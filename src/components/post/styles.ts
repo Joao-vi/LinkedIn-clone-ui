@@ -24,8 +24,13 @@ export const Container = styled.section`
     .info {
       display: flex;
       flex-direction: column;
+      font-size: 11px;
       h2 {
         color: var(--black-color);
+        font-size: 15px;
+      }
+
+      svg {
         font-size: 15px;
       }
     }
@@ -39,6 +44,7 @@ export const Container = styled.section`
   main {
     width: 100%;
     padding: 10px 0;
+    font-size: 15px;
     color: var(--black-color);
   }
 
@@ -51,22 +57,22 @@ export const Container = styled.section`
       align-items: center;
       border-bottom: 1px solid rgb(235 235 235);
       gap: 5px;
-
+      font-size: 13px;
       .blue {
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         background-color: rgb(55 143 233);
         border-radius: 50%;
       }
       .red {
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
         background-color: rgb(223 112 77);
       }
       .green {
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
         background-color: rgb(109 174 79);
       }
@@ -74,6 +80,7 @@ export const Container = styled.section`
 
     .action {
       display: flex;
+      justify-content: center;
       align-items: center;
       gap: 20px;
       padding: 10px;
@@ -83,8 +90,12 @@ export const Container = styled.section`
         align-items: center;
         gap: 5px;
         cursor: pointer;
+        font-size: 16px;
         span {
           font-weight: 500;
+        }
+        svg {
+          font-size: 20px;
         }
       }
     }

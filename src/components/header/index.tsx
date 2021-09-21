@@ -1,4 +1,5 @@
 import { StyledHeader, Container } from "./styles";
+import { useState } from "react";
 
 import LinkedInLogo from "../../assets/linkedinLogo.png";
 import userAvatar from "../../assets/user-avatar.jpg";
@@ -10,9 +11,15 @@ import { IoNotifications } from "react-icons/io5";
 import { IoMdArrowDropdown, IoMdSettings } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
 
-import { UserInfo } from "./userInfo";
+import { MenuEu } from "../MenuEu";
 
 export function Header() {
+  const [showMenuEu, SetShowMenuEu] = useState(false);
+
+  function handleShowMenuOverlay() {
+    SetShowMenuEu((prevState) => !prevState);
+  }
+
   return (
     <Container>
       <StyledHeader>
@@ -46,11 +53,12 @@ export function Header() {
               <IoNotifications />
               <span>Notificações</span>
             </a>
-            <button>
+            <button id="btn-show-menu-eu" onClick={handleShowMenuOverlay}>
               <img src={userAvatar} alt="Avatar" />
               <span>
                 Eu <IoMdArrowDropdown />
               </span>
+              {showMenuEu && <MenuEu />}
             </button>
           </nav>
           <div className="config">

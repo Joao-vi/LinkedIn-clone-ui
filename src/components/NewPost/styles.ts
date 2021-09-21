@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   grid-area: post;
-
+  background-color: var(--painel-color);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px;
-
+  border: 1px solid rgb(235 235 235);
   color: rgb(102 102 102);
   header {
     display: flex;

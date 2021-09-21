@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: var(--painel-color);
-`;
-
-export const StyledHeader = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+`;
 
+export const StyledHeader = styled.header`
   max-width: 1128px;
   margin: 0 auto;
   width: 100%;
@@ -106,6 +105,10 @@ export const StyledHeader = styled.header`
         svg {
           font-size: 25px;
         }
+      }
+      #btn-show-menu-eu {
+        cursor: pointer;
+        position: relative;
       }
     }
 

@@ -8,6 +8,11 @@ export function Feed() {
       <Post />
       <Post />
       <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </StyledFeed>
   );
 }
