@@ -6,6 +6,7 @@ Principal objetivo é aperfeiçoar minha noções de UI e UX.
 ## Tecnologias usadas
 
 ### `React.Js`
+### `Typescript`
 ### `StoryBook`
 ### `React Icons`
 
