@@ -8,6 +8,5 @@ Principal objetivo é aperfeiçoar minha noções de UI e UX.
 ### `React.Js`
 ### `Typescript`
 ### `StoryBook`
-### `React Icons`
 
  
